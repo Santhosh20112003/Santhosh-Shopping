@@ -1,0 +1,201 @@
+.container{
+    display: grid;
+    grid-template:repeat(4,1fr) /repeat(6,1fr);
+    grid-gap:10px; 
+}  
+#dark{
+    color: black;
+}  
+*{
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+}
+body{
+    color: white    ;
+    background-color: #146Eb4;
+}
+#header{
+    background-color:transparent;
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 50px;
+    display: flex;
+}
+#contact
+{
+    font-size: 60px;
+}
+#menu{
+    background-color: transparent;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:-1;   
+    display: flex;
+    margin-top: 20px;
+    justify-content: center; 
+    align-items: center;
+}
+#img{
+    border-radius: 20px;
+}
+#content{
+    background-color: transparent;
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end:-1 ;  
+    display: grid;
+    grid-template: repeat(3,150px)/repeat(4,1fr);
+    border-radius: 20px;
+    gap: 5px;
+    padding-top: 30px;
+    margin-right: 20px;
+    background-color: white;
+    transform: translateY(-10px);
+}
+#btn1{
+ padding: 5px 10px;
+ background-color: transparent;
+ border-style: none;
+ overflow: hidden;
+ border-bottom: 1px solid #146Eb4;
+ font-size: large;
+}
+input::placeholder{
+    color: grey;
+}
+#btn2{
+    padding: 5px 10px;
+ background-color: transparent;
+ border-style: none;
+ overflow: hidden;
+ border-bottom: 1px solid #146Eb4;
+ font-size: large;
+}
+#btn3{
+    padding: 5px 10px;
+ background-color: transparent;
+ border-style: none;
+ font-size: large;
+ overflow: hidden;
+ border-bottom: 1px solid #146Eb4;
+   }
+.btns-1{
+    margin: 5px 5px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: transparent;
+    display: flex;
+ justify-content: center;
+ align-items: center;
+    margin-right: 10px;
+}
+.btns-2{
+    margin: 5px 5px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: transparent;
+    display: flex;
+ justify-content: center;
+ align-items: center;
+    margin-right: 10px;
+}
+.btns-3 {
+    margin: 5px 5px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: transparent;
+    display: flex;
+ justify-content: center;
+ align-items: center;
+    margin-right: 10px;
+}
+.items{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-rows:repeat(4,100px);
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+.email{
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #146Eb4;
+    border-radius: 20px;
+    color: white;
+    margin-right: 20px;    
+}
+#email-h{
+    margin-left: 20px;
+    transform: translateY(0px);
+}
+#email-p{
+    margin-left: 40px;
+    transform: translateY(-3px);
+}
+#email-p1{
+    margin-left: 42px;
+    transform: translateY(-10px);
+}
+#email-h1{
+    margin-left: 20px;
+    transform: translateY(0px);
+}
+.headquaters{
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 20px;
+    background-color: #146Eb4;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.button{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: -1;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#conbtn{
+    padding: 5px 60px;
+    border-radius: 40px;
+    border-style: none;
+    background-color:#146Eb4;
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+}
+i{
+    color: #146Eb4;
+    margin: auto;
+}
+.icon{
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    grid-row-end: -1;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 10px;
+}

@@ -1,0 +1,80 @@
+body{
+    background-color: greenyellow;
+    font-family: sans-serif;
+}
+
+marquee{
+    font-family: cursive;
+    margin: 5px 300px;
+    cursor: pointer;
+}
+button
+{   
+    border-style: none;
+    border-radius: 10px;
+    border-right: 10px;
+    cursor: pointer;
+}
+img
+{
+    height: 500px;
+    width: 1330px;
+    border-radius:20px;
+}
+footer
+{   
+    height: 200px;
+    width: auto;
+background-color: orangered
+}
+#mail
+{
+    text-align: center;
+}
+#gmailbtn
+{  margin-right: 20px;
+   border-radius: 50%;
+   padding: 20px; 
+   
+}
+#box
+{
+    border: 1px solid green;
+    background-color: green;
+}
+#gmaila
+{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+#nav
+{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#navmain
+{
+    text-align: center;
+    margin-top: 15px;   
+}
+#copyright
+{
+    margin: 5px 300px;   
+}
+
+#home
+{   font-size: 20px;
+    padding: 10px 25px;
+    margin: 5px;
+    font-style: italic;
+}
+#home:hover
+{   
+    color: white;
+    background-color: palevioletred;
+}
+

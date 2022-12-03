@@ -1,0 +1,203 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 10% 50% 38%;
+} 
+.rapper{
+     margin-left: 15px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 21px;   
+}
+#home:active{
+    opacity: 0.5;
+}
+#home:hover{
+    background-color: white;
+    color: black;
+}
+#home{
+    color:white;
+    margin-right: 18px;
+    cursor: pointer;
+    font-family: cursive;
+    background-color: transparent;
+}
+#home1:active{
+    animation-name: popup;
+    animation-duration: 0.5s;
+    animation-iteration-count:1;
+}
+#home1:hover{
+    background-color: white;
+    color: black;
+    }
+@keyframes popup{
+    from {transform:translateX(0px);opacity: 1;}
+    50%  {transform: translateX(100px);opacity: 0;}  
+    }
+#home1{
+    color:white;
+    margin-right: 20px;
+    cursor: pointer;
+    font-family: cursive;
+    background-color: tomato;
+    transform: translateX(0px);
+}        
+footer
+{   
+     height: 200px;
+     width: auto;
+     background-color:royalblue;
+}
+#img2{
+    height: 500px;
+    width: 1330px;
+    border-radius:20px;
+}
+#img1{
+    height: 500px;
+    width: 1330px;
+    border-radius:20px;
+    animation-name: rev-hover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+#img1:hover{
+    animation-name: none;
+}
+@keyframes rev-hover{
+   from {transform: translateX(-40px);}
+   50% {transform: translateX(40px);}
+   to {transform: translateX(-40px);}
+}
+#img2{
+    border-radius: 20px;
+}
+#gmailbtn{  
+margin-right: 20px;
+border-radius: 50%;
+padding: 20px; 
+}
+#gmaila
+{
+text-decoration: none;
+color: black;
+text-align: center;
+}
+#mail
+{
+    margin-left: 540px;
+}
+#product{
+    animation-name: none;
+}
+#product:hover{
+    animation-name: text-movement;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes text-movement {
+    from {transform: translateX(-100px);}
+    50% {transform: translateX(100px);}
+    to {transform: translateX(-100px);}
+}
+.sections
+{
+    background-color:yellow;
+}
+.contact{
+    display: grid;
+    height: 400px;
+}
+textarea::placeholder
+{
+    color: white;
+    text-align: center;
+    font-family: cursive;
+}
+input::placeholder{
+    color: grey;
+    text-indent: 20px;
+    font-size: medium;
+}
+
+.slider
+{   
+    display: grid;
+    grid-template-columns: 30% 30% 30%;    
+    grid-column-gap: 50px;
+}
+.slider > span{margin-top: 0px;}
+#imghover:hover{
+    opacity: 0.5;
+    animation-name: hover;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+#gobtn{
+    cursor: pointer;
+}
+#gobtn:active{
+    animation-name: sidego;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes sidego {
+    from {transform:translateX(0px);opacity: 1;
+        border-radius: 15px 20px 20px 15px}
+    50%  {transform: translateX(50px);opacity: 0;
+        border-radius: 20px 20px 20px 20px}               
+}
+#home:active{
+    animation-name: toppopup;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes toppopup {
+    from {transform:translateY(0px);opacity: 1;}
+    50%  {transform: translateY(-100px);opacity: 0;}              
+}
+
+@keyframes hover{
+    0% {opacity:1}
+    40% {opacity: 0.3;}
+    60% {opacity: 0.5;}
+    100% {opacity:1}
+} 
+#logo:active{
+    animation-name: x;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+@keyframes x {
+    from{opacity:1}
+    50%{opacity: 0.3;}
+}
+.images{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    column-gap: 10px;
+    
+}
+.images > img{ 
+    height:60px;
+    width:60px;
+    border-radius: 50%; 
+    margin-right: 30px;
+}
+.card{
+    margin-top:80px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 60px;
+    border:0px solid black;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 30px grey;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px grey inset;
+}

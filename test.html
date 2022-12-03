@@ -1,0 +1,347 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhosh_Shopping</title>
+    <link rel="icon" href="images/appstore.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Code+Pro:ital,wght@0,200;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<script src="test.js"></script>
+    <style>
+        
+        .wrapper{
+            display: grid;
+            grid-template-columns: 30% 70% ;
+        } 
+        .rapper{
+             margin-left: 15px;
+             margin-top: 10px;
+             margin-bottom: 10px;
+             margin-right: 21px;   
+        }
+        #home:active{
+            opacity: 0.5;
+        }
+        #home:hover{
+            background-color: white;
+            color: black;
+        }
+        #home{
+            color:white;
+            margin-right: 18px;
+            cursor: pointer;
+            font-family: cursive;
+            background-color: transparent;
+        }
+        #home1:active{
+            animation-name: popup;
+            animation-duration: 0.5s;
+            animation-iteration-count:1;
+        }
+        #home1:hover{
+            background-color: white;
+            color: black;
+            }
+        @keyframes popup{
+            from {transform:translateX(0px);opacity: 1;}
+            50%  {transform: translateX(100px);opacity: 0;}  
+            }
+        #home1{
+            color:white;
+            margin-right: 20px;
+            cursor: pointer;
+            font-family: cursive;
+            background-color: tomato;
+            transform: translateX(0px);
+        }        
+        footer
+        {   
+             height: 200px;
+             background-color:royalblue;
+        }
+        #img2{
+            height: 500px;
+            width: 1330px;
+            border-radius:20px;
+        }
+        #img1{
+            height: 500px;
+            width: 1330px;
+            border-radius:20px;
+            animation-name: rev-hover;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+        #img1:hover{
+            animation-name: none;
+        }
+        @keyframes rev-hover{
+           from {transform: translateX(-40px);}
+           50% {transform: translateX(40px);}
+           to {transform: translateX(-40px);}
+        }
+        #img2{
+            border-radius: 20px;
+        }
+        #gmailbtn{  
+        margin-right: 20px;
+        border-radius: 50%;
+        padding: 20px; 
+        }
+        #gmaila
+        {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        }
+        #mail
+        {
+            margin-left: 540px;
+        }
+        #product{
+            animation-name: none;
+        }
+        #product:hover{
+            animation-name: text-movement;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes text-movement {
+            from {transform: translateX(-100px);}
+            50% {transform: translateX(100px);}
+            to {transform: translateX(-100px);}
+        }
+        .sections
+        {
+            background-color:#25274d;
+        }
+        .contact{
+            display: grid;
+            height: 400px;
+        }
+        textarea::placeholder
+        {
+            color: white;
+            text-align: center;
+            font-family: cursive;
+        }
+        input::placeholder{
+            color: grey;
+            text-indent: 20px;
+            font-size: medium;
+        }
+        
+        .slider
+        {   
+            display: grid;
+            grid-template-columns: 30% 30% 30%;    
+            grid-column-gap: 50px;
+        }
+        .slider > span{margin-top: 0px;}
+        #imghover:hover{
+            opacity: 0.5;
+            animation-name: hover;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+        }
+        #gobtn{
+            cursor: pointer;
+        }
+        #gobtn:active{
+            animation-name: sidego;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes sidego {
+            from {transform:translateX(0px);opacity: 1;
+                border-radius: 15px 20px 20px 15px}
+            50%  {transform: translateX(50px);opacity: 0;
+                border-radius: 20px 20px 20px 20px}               
+        }
+        #home:active{
+            animation-name: toppopup;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+        @keyframes toppopup {
+            from {transform:translateY(0px);opacity: 1;}
+            50%  {transform: translateY(-100px);opacity: 0;}              
+        }
+
+        @keyframes hover{
+            0% {opacity:1}
+            40% {opacity: 0.3;}
+            60% {opacity: 0.5;}
+            100% {opacity:1}
+        } 
+        #logo:active{
+            animation-name: x;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: 1;
+        }
+        @keyframes x {
+            from{opacity:1}
+            50%{opacity: 0.3;}
+        }
+        .images{
+            display: grid;
+            grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+            column-gap: 10px;
+            
+        }
+        .images > img{ 
+            height:60px;
+            width:60px;
+            border-radius: 50%; 
+            margin-right: 30px;
+        }
+        .card{
+            margin-top:80px;
+            margin-left: 70px;
+            margin-right: 70px;
+            margin-bottom: 60px;
+            border:0px solid black;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 20px 20px 30px rgb(110, 110, 110);
+        }
+        .card:hover{
+            box-shadow: 5px 5px 20px grey inset;
+        }
+        #picture{
+            display:flex;
+            
+            align-items: baseline;
+        }
+</style>
+<script>
+</script>
+</head>
+<body style="background-color:#25274d; zoom:100%;">
+    <!-- header -->
+    <div class="wrapper" style="background-color: #146Eb4; padding: 0px 50px;font-family: cursive;margin:-10px;height: 170px;width:1250px;">
+        <div id="picture"><a href="https://santhoshtechnologies.netlify.app/"><img id="logo" src="logo.png" style="height: 120px;width: 190px;margin-top: 30px;margin-bottom: 30px;border-radius: 5px;"></a></div>
+        <div>
+           <h1 style="color:white;-webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: #25274d;margin: 55px 120px;font-size:50px;font-size:50px;letter-spacing: 5px;font-family: 'Anton', sans-serif;">Santhosh_Shopping's</h1>
+       </div>
+       <!-- <div class="rapper"style="margin-top:75px">
+        <a id="nav" href="#section1"><button id="home" style=" margin-left:18px;font-size: 20px;border-radius: 10px;border-style: none;padding: 7px 10px;font-weight: bold;">Home</button></a>
+        <a id="nav" href="login.html"><button id="home" style="font-size: 20px;border-radius: 10px;border-style: none;padding: 7px 10px;font-weight: bold;">Sign-in</button></a>
+        <a id="nav" href="register.html"><button id="home"style="font-size: 20px;border-radius: 10px;border-style: none;padding: 7px 10px;font-weight: bold;">Sign-up</button></a>
+        <a id="nav" href="images/contact.html" ><button id="home"style="font-size: 20px;border-radius: 10px;border-style: none;padding: 7px 10px;font-weight: bold; margin-right:0px;">contact</button></a>
+       </div> -->
+    </div>
+    <!-- sections -->
+    <div class="sections">
+        <div class="elements" style="height: 220px;">
+        <form style="margin-top:40px;margin-left: 70px;">
+            <input placeholder="Search for products,Brands and More" type="text" style="height: 50px;width: 1000px;border-radius: 20px 0px 0px 20px;border-style: none;text-indent: 20px;font-size: 22px;"/> 
+            <input onclick="ab()" type="submit" value="Mic" style="height: 50px;background-color:royalblue;text-align:center;width:80px;border-radius: 0px 0px 0px 0px;border-style: none;color:white;font-size: 18px;transform:translateX(-5px);font-family: cursive;cursor: pointer;"/>
+            <input type="submit" value="Go" id="gobtn" style="text-align:center;height: 50px;background-color:royalblue;width:80px;border-radius: 0px 20px 20px 0px;border-style: none;color:white;transform: translateX(-10px);font-size: 18px;font-family: cursive;"/>
+          </form>
+          <br>
+          <div style="margin-top: 20px;margin-left: 130px;margin-right: 95px;" class="images">
+            <div><a id="groceries" href="groceries.html" style="color: black;text-decoration: none;"><img src="grocerieslogo.jpg" id="logo" alt="Prime"style="height:60px;width:60px;border-radius: 50%;margin-right: 30px;"><h6 style="color:white;margin-left:7px;transform: translateY(-15px);font-family: cursive;letter-spacing: 2px;">Groceries</h5></a></div>
+            <div><a id="garments"href="Garments.html" style="color: black;text-decoration: none;"><img src="garmentslogo.jpg" id="logo" alt="Prime"style="height:60px;width:60px;border-radius: 50%;margin-right: 30px;"><h6 style="margin-left:10px;color:white;transform: translateY(-15px);font-family: cursive;letter-spacing: 2px;">Garments</h5></a></div>
+            <div><a id="electronics"href="Electronics.html" style="color: black;text-decoration: none;"><img src="electronicslogo.png" id="logo" alt="Prime"style="height:60px;width:60px;border-radius: 50%;margin-right: 30px;"><h6 style="margin-left:2px;color:white;margin-right:48;transform: translateY(-15px);font-family: cursive;letter-spacing: 2px;">Electronics</h5></a></div>
+            <div><a id="appliances"href="Appliances.html" style="color: black;text-decoration: none;"><img src="furnitures.png" id="logo" alt="Prime"style="height:60px;width:60px;border-radius: 50%;margin-right: 30px;"><h6 style="margin-left:6px;color:white;transform: translateY(-15px);font-family: cursive;letter-spacing: 2px;">Appliances</h5></a></div>
+            <div><a id="mobiles"href="Mobiles.html" style="color: black;text-decoration: none;"><img src="maobilelogo.jpg" id="logo" alt="Prime"style="height:60px;width:60px;border-radius: 50%;margin-right: 30px;"><h6 style="margin-left:10px;color:white;transform: translateY(-15px);font-family: cursive;letter-spacing: 2px;">Mobiles</h5></a></div>
+            <div><a id="food"href="Food.html" style="color: black;text-decoration: none;"><img src="foodlogo.png" id="logo" alt="Prime"style="height:60px;width:60px;border-radius: 50%;margin-right: 30px;"><h6 style="margin-left:16px;color:white;transform: translateY(-15px);font-family: cursive;letter-spacing: 2px;">Food</h5></a></div>
+            <div><a id="pharmacy"href="Pharmacy.html" style="color: black;text-decoration: none;"><img src="pharmacylogo.png" id="logo" alt="Prime"style="height:60px;width:60px;border-radius: 50%;margin-right: 30px;"><h6 style="margin-left:6px;color:white;transform: translateY(-15px);font-family: cursive;letter-spacing: 2px;">Pharmacy</h5></a></div>
+            <div><a id="Books"href="Books.html" style="color: black;text-decoration: none;"><img src="bookslogo.jpg" id="logo" alt="Prime"style="height:60px;width:60px;border-radius: 50%;margin-right: 30px;"><h6 style="margin-left:15px;transform: translateY(-15px);color:white;;font-family: cursive;letter-spacing: 2px;">Books</h5></a></div>
+            <div><a id="fresh"href="Fresh.html" style="color: black;text-decoration: none;"><img src="freshlogo.png" id="logo" alt="Prime"style="height:60px;width:60px;border-radius: 50%;margin-right: 30px;"><h6 style="margin-left:13px;transform: translateY(-15px);color:white;;font-family: cursive;letter-spacing: 2px;">Fresh</h5></a></div>
+        </div>    
+    </div>
+        <br>
+        <div id="section1">
+            <img src="background.jpg" style="height: 350px;width :1250px;margin-left: 40px;cursor: pointer;"id="img1">
+        </div>
+        <br><br>
+        <div id="section2" style="height: 1400px;width: 1330px;">
+        <h1 style="text-align:center;cursor: pointer;font-size: xx-large;font-family: cursive;" id="product"><--- Santhosh Product's ---></h1><br>
+        <br>
+        <div class="slider">
+            <span>
+                <a href="#groceries"><img id="imghover" src="groceries.jpg" class="slide" style="height: 300px;width: 433px;border-radius: 20px;"/></a>  
+            </span>
+            <span>
+                <a href="#garments"><img id="imghover" src="garments.webp" class="slide" style="height: 300px;width: 433px;border-radius: 20px;"/></a>
+            </span>
+            <span >
+                <a href="#electronics"><img id="imghover" src="electronics.jpg" class="slide" style="height: 300px;width: 433px;border-radius: 20px;"/></a>
+            </span>
+            
+            <span style="margin:20px 0px 20px 185px;"><a href="groceries.html"><button id="home1"style="padding: 10px 15px;border-radius: 20px;border-style: none;border: 1px solid black;color: black;cursor: pointer;margin-right:0px;border-style: none;">groceries</button></a></span>
+            <span style="margin:20px 0px 20px 185px;"><a href="Garments.html"><button id="home1"style="padding: 10px 15px;border-radius: 20px;border-style: none;border: 1px solid black;color: black;cursor: pointer;margin-right:0px;border-style: none;">garments</button></a></span>
+            <span style="margin:20px 0px 20px 185px;"><a href="Electronics.html"><button id="home1"style="padding: 10px 15px;border-radius: 20px;border-style: none;border: 1px solid black;color: black;cursor: pointer;margin-right:0px;border-style: none;">electronics</button></a></span>
+            
+        </div>
+        <br>
+            <div class="slider">
+                <span>
+                    <a href="#appliances"><img src="kitchen.jpg" id="imghover" style="height: 300px;width: 433px;cursor: pointer;border-radius: 20px;"/></a>
+                </span>
+                <span>
+                    <a href="#mobiles"><img id="imghover" src="mobile.jpg"  style="height: 300px;width: 433px;cursor: pointer;border-radius: 20px;"/></a>
+                </span>
+                <span >
+                    <a href="#food"><img id="imghover" src="food.jpeg" style="height: 300px;width: 433px;cursor: pointer;border-radius: 20px;border: 2px solid transparent;"/></a>
+                </span>
+                
+                <span style="margin:20px 0px 20px 185px;"><a href="Appliances.html" ><button id="home1"style="padding: 10px 15px;border-radius: 20px;border-style: none;border: 1px solid black;color: black;cursor: pointer;margin-right:0px;border-style:none;">kitchen</button></a></span>
+                <span  style="margin:20px 0px 20px 185px;"><a href="Mobiles.html"style="cursor:pointer;"><button id="home1"style="padding: 10px 15px;border-radius: 20px;border-style: none;border: 1px solid black;color: black;margin-right:0px;cursor:pointer;border-style:none;">mobiles</button></a></span>
+                <span  style="margin:20px 0px 20px 185px;"><a href="Food.html"><button id="home1"style="padding: 10px 15px;border-radius: 20px;border-style: none;border: 1px solid black;color: black;margin-right:0px;cursor: pointer;border-style:none;">Food</button></a></span>
+                </div>
+                <br>
+                <div class="slider">
+                    <span>
+                        <a href="#pharmacy"><img src="pharmacy.jpg" id="imghover" style="height: 300px;width: 433px;cursor: pointer;border-radius: 20px;"/></a>
+                    </span>
+                    <span>
+                        <a href="#books"><img id="imghover" src="books.jpg"  style="height: 300px;width: 433px;cursor: pointer;border-radius: 20px;"/></a>
+                    </span>
+                    <span >
+                        <a href="#fresh"><img id="imghover" src="fresh.jpg" style="height: 300px;width: 433px;cursor: pointer;border-radius: 20px;border: 2px solid transparent;"/></a>
+                    </span>
+                    
+                    <span style="margin:20px 0px 20px 185px;"><a href="Pharmacy.html" ><button id="home1"style="padding: 10px 15px;border-radius: 20px;border-style: none;border: 1px solid black;color: black;cursor: pointer;margin-right:0px;border-style:none;">medicines</button></a></span>
+                    <span  style="margin:20px 0px 20px 185px;"><a href="Books.html"style="cursor:pointer;"><button id="home1"style="padding: 10px 15px;border-radius: 20px;border-style: none;border: 1px solid black;color: black;margin-right:0px;cursor:pointer;border-style:none;">Books</button></a></span>
+                    <span  style="margin:20px 0px 20px 185px;"><a href="Fresh.html"><button id="home1"style="padding: 10px 15px;border-radius: 20px;border-style: none;border: 1px solid black;color: black;margin-right:0px;cursor: pointer;border-style:none;">Fresh</button></a></span>
+                    </div> 
+        </div>
+    </div>
+    <p style="height: 100px;width:1250px; margin:0px 50px;border-radius: 50px;border-style: none;box-shadow: 10px 10px 40px black;background-color:whitesmoke; text-align: center;font-size: 60px;padding-top: 30px;">New Fashionable Clothes</p>
+    <div id="section3" style="height: 500px;width: auto;">
+        <iframe class="card" onmouseover="abc()" src="https://santhoshfeedback.netlify.app/" height="330px" width="300px"></iframe>
+        <iframe class="card" src="images/otp.html" height="330px" width="300px"></iframe>
+        <iframe class="card" src="https://santhoshfeedback.netlify.app/" height="330px" width="300px"></iframe>
+    </div>
+    </div>
+    <!-- <div class="contact">
+      <div id="area1" style="margin-left: 397px;margin-bottom: 20px;">
+          <div>
+              <textarea id="" cols="50" rows="10" style="color:white;margin:50px 50px 0px 50px; background-color:rgb(255, 116, 91);border-radius: 20px;" placeholder="  write your feedbacks here....."></textarea></div> 
+         <button type="submit" style="margin:5px 213px;background-color:rgb(250, 74, 42);border-radius: 10px;padding: 2px 10px;color: white;border-style: none;cursor: pointer;">Send</button>    
+    </div> -->
+    <br>
+    <!-- footer -->
+    <footer id="contact" style="background-color:#146Eb4">
+        <div id="mail" >
+            <br><br><br>
+            <a id="gmaila" href="mailto:shanmugamsanthosh22@gmail.com" id="mail"><button id="gmailbtn" style="background-color: smokegray;font-family: cursive;border-style: none;cursor: pointer;">gmail</button></a>
+            <a id="gmaila"href="mailto:shanmugamsanthosh22@gmail.com" id="mail"><button id="gmailbtn"style="background-color:  #E1306c;font-family: cursive;border-style: none;cursor: pointer;">Instagram</button></a>
+            <a id="gmaila"href="mailto:shanmugamsanthosh22@gmail.com" id="mail" ><button id="gmailbtn"style="background-color: skyblue;font-family: cursive;border-style: none;cursor: pointer;">Twitter</button></a>
+        </div>
+        <br><br>
+        <marquee behavior="scroll" direction="left" style="font-family: cursive;margin: 0px 450px;">copyright @ 2022 S&N.All rights reserved...</marquee>
+        </footer>
+</body>
+</html>

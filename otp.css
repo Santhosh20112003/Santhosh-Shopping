@@ -1,0 +1,80 @@
+::placeholder{
+  color: grey;
+}
+body {
+    text-align: center;
+    font-family:cursive;
+    padding-top: 1%;
+    color: white;
+    background-color: #146Eb4;
+    
+  }
+  
+  h2{
+    margin-bottom: 5%;
+    font-size: larger;
+  }
+  
+  .container {
+    border-style: none;
+    margin-top: 150px;
+    margin-left: 520px;
+    width: 20vw;
+    height: 25vh;
+    padding: 20px 20px;
+    padding-bottom: 50px;
+    background-color: white;
+    color: #146Eb4;
+    border-radius: 40px;
+  }
+  .container:hover{
+    box-shadow: 10px 10px 25px 8px #232425;
+  }
+  .field{
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px;
+  }
+  #otp{
+    text-align: left;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+  }
+  .btn {
+    margin-top: 15px;
+    padding: 6px 4px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #146Eb4;
+    border: none;
+    outline: none;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #email{
+    margin-top: 10px;
+    border-style: none;
+    border-bottom: 2px solid #146Eb4;
+  }
+  .otp-container {
+    display: none;
+  }
+  input {
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    outline: none;
+    border: solid 1px lightslategray;
+    padding: 6px 4px;
+    font-size: large;
+    border-radius: 2px;
+  }
+  span {
+    margin-top: 15px;
+  }
+  

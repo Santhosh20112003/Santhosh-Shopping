@@ -1,0 +1,85 @@
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="icon" href="download.png" type="x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="contact.css">
+    <link rel="script" href="contact.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head> 
+<body style="zoom: 90%;">
+    <script>
+    function dark_mode()
+        {
+            document.querySelector("i").style.color = "#146Eb4";
+            document.querySelector("body").style.backgroundColor = "#242526";
+            document.querySelector(".email").style.backgroundColor = "#242526";
+            document.querySelector(".headquaters").style.backgroundColor = "#242526";
+            document.querySelector("#conbtn").style.backgroundColor = "#242526";
+            document.querySelector("#icon1").style.color = "#242526";
+            document.querySelector("#icon2").style.color = "#242526";
+            document.querySelector("#icon3").style.color = "#242526";
+            document.querySelector("#icon4").style.color = "#242526";
+            document.getElementById("btn1").style.borderBottom = "1px solid #242526";
+            document.getElementById("btn2").style.borderBottom = "1px solid #242526";
+            document.getElementById("btn3").style.borderBottom = "1px solid #242526";
+        }
+        function light_mode()
+        {
+            document.querySelector("i").style.color = "white";
+            document.querySelector("body").style.backgroundColor = "#146Eb4";
+            document.querySelector(".email").style.backgroundColor = "#146Eb4";
+            document.querySelector(".headquaters").style.backgroundColor = "#146Eb4";
+            document.querySelector("#conbtn").style.backgroundColor = "#146Eb4";
+            document.querySelector("#icon1").style.color = "#146Eb4";
+            document.querySelector("#icon2").style.color = "#146Eb4";
+            document.querySelector("#icon3").style.color = "#146Eb4";
+            document.querySelector("#icon4").style.color = "#146Eb4";
+            document.getElementById("btn1").style.borderBottom = "1px solid #146Eb4";
+            document.getElementById("btn2").style.borderBottom = "1px solid #146Eb4";
+            document.getElementById("btn3").style.borderBottom = "1px solid #146Eb4";
+            
+        }
+        </script>
+    <div class="container">
+        <div id="header">
+            <h1 id="contact">Contact Us</h1>
+            <i  onclick="dark_mode()" ondblclick="light_mode()" name="icons" class="fa-solid fa-circle-half-stroke fa-3x" style="color: white;transform: translateY(5px);" ></i>
+         </div>
+        <div id="menu">
+         <img id="img" src="contact.webp" height="650px" width="680px">
+        </div>
+        <div id="content">
+            <div class="items">
+              <div class="btns-1"><input id="btn1"  placeholder="Full Name"/></div>
+              <div class="btns-2"><input id="btn2"  placeholder="Email"/></div>
+              <div class="btns-3"><input id="btn3"  placeholder="Message"/></div>
+            </div>
+            <div class="email"> 
+                <h1 id="email-h">Contact</h1>
+                <p id="email-p">shanmugamsanthosh22@gmail.com</p>
+            </div>
+            <div class="headquaters">
+                <h1 id="email-h1">Based in</h1>
+                <p id="email-p1">Chennai,TamilNadu</p>
+                
+            </div>
+            <div class="button">
+                <button id="conbtn"><h1>Contact Us :)</h1>
+                </button>
+            </div>
+            <div class="icon">
+                <i id="icon1" class="fa-brands fa-facebook-f fa-2x"></i>
+                <i id="icon2" class="fa-brands fa-instagram fa-2x"></i>
+                <i id="icon3" class="fa-brands fa-twitter fa-2x"></i>
+                <i id="icon4" class="fa-brands fa-facebook-messenger fa-2x"></i>     
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
